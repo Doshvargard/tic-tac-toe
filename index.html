@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./js/controller.js"></script>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div id="main">
+      <h3 class="main_title">Tic Tac Toe</h3>
+      <div class="results">
+        <img src="./img/O.png" alt="" class="result--img" data-player="o" />
+        <h1 class="results--score o__score">0</h1>
+        <h1 class="results--score x__score">0</h1>
+        <img src="./img/X.png" alt="" class="result--img" data-player="x" />
+      </div>
+      <div class="message">
+        <p class="message_text">Please choose your Player X or O !</p>
+      </div>
+      <div class="modal hide">
+        <!-- <h1 class="modal__caption">
+          PLAYER
+          <img src="./img/O.png" alt="" class="result--img modal__img" /> WON!
+        </h1> -->
+        <!-- <a href="" class="modal__btn"><h3 class="btn__text">Play again!</h3></a>
+        <p class="message_text">Made by: Hossein Doshvargard</p> -->
+      </div>
+      <div class="modal modal__warning hide">
+        Please select a player X or O from the top !
+      </div>
+      <div id="gridcontainer">
+        <div class="winline"></div>
+        <div id="gridlines">
+          <div class="grid_line line--1" data-number="1">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_line line--2" data-number="2">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_line line--3" data-number="3">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_line line--4" data-number="4">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_line line--5" data-number="5">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_line line--6" data-number="6">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_line line--7" data-number="7">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_line line--8" data-number="8">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_line line--9" data-number="9">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+        </div>
+        <div id="grid">
+          <div class="grid_cell cell--1" data-number="1">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_cell cell--2" data-number="2">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_cell cell--3" data-number="3">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_cell cell--4" data-number="4">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_cell cell--5" data-number="5">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_cell cell--6" data-number="6">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_cell cell--7" data-number="7">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_cell cell--8" data-number="8">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+          <div class="grid_cell cell--9" data-number="9">
+            <!-- <img class="img hidden" src="" alt="" /> -->
+          </div>
+        </div>
+      </div>
+      <a href="" class="btn"></a>
+    </div>
+  </body>
+</html>
