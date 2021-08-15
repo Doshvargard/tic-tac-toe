@@ -23,11 +23,9 @@ export const setCurrentPlayer = function (curPlayer) {
 };
 
 export const setPlayerMoves = function (move) {
-  console.log(state.currentPlayer);
   if (state.gridState[move]) return;
   state.cellId = move;
   state.gridState[move] = state.currentPlayer;
-  console.log(state.gridState);
   givePlayerWinner();
 };
 
@@ -53,7 +51,6 @@ const givePlayerWinner = function () {
       state.playerWinner = state.currentPlayer;
       state.gameOver = true;
       state.winLineClass = condition[3];
-      console.log(`${state.playerWinner} Won!`);
     }
   });
   if (Object.entries(state.gridState).length === 9 && !state.gameOver)

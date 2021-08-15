@@ -13,7 +13,6 @@ class view {
   _msg = document.querySelector(".message_text");
   rander(data) {
     this._data = data;
-    console.log(data);
     this.gridUpdate();
   }
 
@@ -36,7 +35,6 @@ class view {
 
   gridUpdate() {
     const targetCell = document.querySelector(`.cell--${this._data.cellId}`);
-    console.log(this._data.currentPlayer);
     const markUp = `<img class="img " src=${
       this._data.currentPlayer === "o" ? O : X
     } alt="" />`;
@@ -68,7 +66,6 @@ class view {
   renderWelcomeModal() {}
 
   renderWarningModal() {
-    console.log("warning");
     this.modalWarningWindow.classList.remove("hide");
     setTimeout(() => {
       this.modalWarningWindow.classList.add("hide");
@@ -117,7 +114,6 @@ class view {
     this._playerSelector.addEventListener("click", function (e) {
       const playerBtn = e.target.closest(".result--img");
       const curPlayer = playerBtn.dataset.player;
-      console.log(curPlayer);
       handler(curPlayer);
     });
   }
