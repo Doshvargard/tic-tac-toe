@@ -4,6 +4,7 @@ import view from "./view";
 import * as model from "./model";
 
 const controlCurrentPlayer = function (curPlayer) {
+  console.log(curPlayer);
   if (model.state.currentPlayer) return;
   model.setCurrentPlayer(curPlayer);
   view.rander(model.state);
